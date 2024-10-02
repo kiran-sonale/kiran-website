@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>flex exer</title>
+
+ <style>
+  .container{
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    width: 300px;
+  }
+
+  .flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .num{
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text{
+    font-weight: bold;
+    font-family: arial;
+  }
+
+  .container1{
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .home{
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    margin-left: 25px;
+    margin-right: 150px;
+    width: 150px;
+  }
+
+  .download{
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 200px;
+    width: 100px;
+  }
+
+  .bar{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 50px;
+ }
+
+  .bar1{
+    flex: 1;
+    max-width: 400px;
+  }
+ </style>
+  
+</head>
+
+<body>
+  
+ <div class="container">
+  <div class="flexbox">
+    <div class="text">Home</div>
+    <div><button class="num">14</button></div>
+  </div>
+
+  <div class="flexbox">
+    <div class="text">Notifications</div>
+    <div><button class="num">3</button></div>
+  </div>
+
+  <div class="flexbox">
+    <div class="text">Messages</div>
+    <div> <button class="num">5</button></div>
+  </div>
+ </div>
+</body>
+
+<body>
+  <div class="container1">
+    <div class="home">
+      <p>Home</p>
+    </div>
+    
+    <div class="bar1">
+       <input class="bar" type="text" placeholder="Search">
+    </div>
+   
+    <div>
+      <button  class="download">
+        Download
+      </button>
+    </div>
+   
+  </div>
+ 
+</body>
+</html>
